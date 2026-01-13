@@ -1,0 +1,27 @@
+{
+  "name": "ego-syntax",
+  "displayName": "Ego Syntax Highlighting",
+  "description": "Syntax highlighting for the Ego programming language",
+  "version": "0.0.1",
+  "publisher": "Tausy",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages"],
+  "configuration": "./language-configuration.json",
+  "contributes": {
+    "languages": [
+      {
+        "id": "ego",
+        "aliases": ["Ego", "ego"],
+        "extensions": [".ego"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ego",
+        "scopeName": "source.ego",
+        "path": "./syntaxes/ego.tmLanguage.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Ego",
+  "scopeName": "source.ego",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#functions" },
+    { "include": "#keywords" },
+    { "include": "#constants" },
+    { "include": "#identifiers" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.ego",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.ego",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.ego",
+              "match": "\\\\(\\\\|\"|n|r|t|0|x[0-9A-Fa-f]{2}|u\\{[0-9A-Fa-f]+\\})"
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.ego",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.ego",
+              "match": "\\\\(\\\\|'|n|r|t|0|x[0-9A-Fa-f]{2})"
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.ego",
+          "match": "\\b(0x[0-9A-Fa-f]+|\\d+(_\\d+)*(\\.\\d+(_\\d+)*)?)\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.ego",
+          "match": "\\b(if|else|ret|for|to|in|and|or|not)\\b"
+        },
+        {
+          "name": "keyword.control.block.end.ego",
+          "match": ";"
+        },
+        {
+          "name": "keyword.operator.ego",
+          "match": "(\\+|\\-|\\*\\*|\\*|\\/|%|==|!=|<=|>=|<|>|=|!)"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.ego",
+          "match": "\\b(true|false|nil)\\b"
+        },
+        {
+          "name": "constant.other.symbol.ego",
+          "match": ":[A-Za-z_][A-Za-z0-9_]*\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "meta.function.definition.ego",
+          "match": "(^|\\s)(:)(\\s*)([A-Za-z_][A-Za-z0-9_]*[!?=]?)(?=\\s*\\(|\\s|$)",
+          "captures": {
+            "2": { "name": "keyword.operator.definition.ego" },
+            "4": { "name": "entity.name.function.ego" }
+          }
+        },
+        {
+          "name": "entity.name.function.ego",
+          "match": "\\bdef\\s+([A-Za-z_][A-Za-z0-9_]*[!?=]?)\\b",
+          "captures": {
+            "1": { "name": "entity.name.function.ego" }
+          }
+        },
+        {
+          "name": "meta.function-call.ego",
+          "match": "\\b([A-Za-z_][A-Za-z0-9_]*[!?=]?)\\s*(?=\\()",
+          "captures": {
+            "1": { "name": "support.function.ego" }
+          }
+        }
+      ]
+    },
+    "identifiers": {
+      "patterns": [
+        {
+          "name": "variable.other.vararg.ego",
+          "match": "\\$[0-9]+"
+        },
+        {
+          "name": "variable.other.ego",
+          "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+        },
+        {
+          "name": "constant.other.class.ego",
+          "match": "\\b[A-Z][A-Za-z0-9_]*\\b"
+        },
+        {
+          "name": "variable.other.instance.ego",
+          "match": "@[A-Za-z_][A-Za-z0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}
