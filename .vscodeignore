@@ -1,0 +1,26 @@
+# VS Code extension ignore file
+**/.git
+**/.svn
+**/.hg
+**/CVS
+**/.DS_Store
+**/.vscode-test/**
+**/test/**
+**/tests/**
+**/*.test.js
+**/*.test.ts
+**/*.spec.js
+**/*.spec.ts
+**/.github
+**/node_modules
+**/.eslintrc*
+**/.prettierrc*
+**/tsconfig.json
+**/tslint.json
+**/*.md
+!README.md
+**/src/**
+**/.gitignore
+**/.vscodeignore
+**/package-lock.json
+**/yarn.lock
