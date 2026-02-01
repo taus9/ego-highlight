@@ -1,11 +1,13 @@
 # ego-highlight
 
-A very basic syntax highlighting extension for VS Code.
+A very basic Ego syntax highlighting extension for VS Code.
+
+https://github.com/taus9/ego
 
 ## Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/ego-highlight.git
+git clone https://github.com/taus9/ego-highlight.git
 cd ego-highlight
 ```
 
