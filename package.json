@@ -2,6 +2,7 @@
   "name": "ego-highlight",
   "displayName": "Ego Syntax Highlighting",
   "description": "Syntax highlighting for the Ego programming language",
+  "publisher": "Tausy",
   "version": "0.1.0",
   "engines": { "vscode": "^1.85.0" },
   "categories": ["Programming Languages"],
