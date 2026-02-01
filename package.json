@@ -1,9 +1,9 @@
 {
-  "name": "ego-syntax",
+  "name": "ego-highlight",
   "displayName": "Ego Syntax Highlighting",
   "description": "Syntax highlighting for the Ego programming language",
-  "version": "0.0.1",
-  "publisher": "Tausy",
+  "version": "0.1.0",
+  "publisher": "Christopher Martinez",
   "engines": { "vscode": "^1.85.0" },
   "categories": ["Programming Languages"],
   "configuration": "./language-configuration.json",
@@ -23,5 +23,16 @@
         "path": "./syntaxes/ego.tmLanguage.json"
       }
     ]
+  },
+  "keywords": ["syntax", "highlighting", "ego", "language"],
+  "license": "MIT",
+  "author": {
+    "name": "Christopher Martinez",
+    "email": "crmarz@proton.me",
+    "github": "github.com/taus9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taus9/ego-highlight.git"
   }
 }
