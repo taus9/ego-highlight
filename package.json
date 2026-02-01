@@ -3,7 +3,6 @@
   "displayName": "Ego Syntax Highlighting",
   "description": "Syntax highlighting for the Ego programming language",
   "version": "0.1.0",
-  "publisher": "Christopher Martinez",
   "engines": { "vscode": "^1.85.0" },
   "categories": ["Programming Languages"],
   "configuration": "./language-configuration.json",
