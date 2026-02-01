@@ -1,12 +1,12 @@
-# ego-syntax
+# ego-highlight
 
 A very basic syntax highlighting extension for VS Code.
 
 ## Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/ego-syntax.git
-cd ego-syntax
+git clone https://github.com/<your-username>/ego-highlight.git
+cd ego-highlight
 ```
 
 ## Build the extension
@@ -25,7 +25,7 @@ Package the extension with `vsce` using `npx`:
 npx vsce package
 ```
 
-This will create a `.vsix` file in the project directory (for example, `ego-syntax-0.0.1.vsix`).
+This will create a `.vsix` file in the project directory (for example, `ego-highlight-0.1.0.vsix`).
 
 ## Install the VSIX in VS Code
 
@@ -34,7 +34,7 @@ You can install the generated `.vsix` file in VS Code in either of these ways:
 1. **Using the command line**
 
    ```bash
-   code --install-extension ego-syntax-0.0.1.vsix
+   code --install-extension ego-highlight-0.1.0.vsix
    ```
 
 2. **Using the VS Code UI**
