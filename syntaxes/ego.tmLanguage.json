@@ -23,17 +23,6 @@
     "strings": {
       "patterns": [
         {
-          "name": "string.quoted.double.ego",
-          "begin": "\"",
-          "end": "\"",
-          "patterns": [
-            {
-              "name": "constant.character.escape.ego",
-              "match": "\\\\(\\\\|\"|n|r|t|0|x[0-9A-Fa-f]{2}|u\\{[0-9A-Fa-f]+\\})"
-            }
-          ]
-        },
-        {
           "name": "string.quoted.single.ego",
           "begin": "'",
           "end": "'",
