@@ -58,7 +58,7 @@
       "patterns": [
         {
           "name": "keyword.control.ego",
-          "match": "\\b(if|else|ret|for|to|in|and|or|not)\\b"
+          "match": "\\b(if|else|ret|for|to|in|and|or|not|break|again|when|is|use|as)\\b"
         },
         {
           "name": "keyword.control.block.end.ego",
@@ -115,12 +115,12 @@
           "match": "\\$[0-9]+"
         },
         {
-          "name": "variable.other.ego",
-          "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+          "name": "variable.other.const.ego",
+          "match": "\\$[A-Za-z_][A-Za-z0-9_]*\\b"
         },
         {
-          "name": "constant.other.class.ego",
-          "match": "\\b[A-Z][A-Za-z0-9_]*\\b"
+          "name": "variable.other.ego",
+          "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
         },
         {
           "name": "variable.other.instance.ego",
